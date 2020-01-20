@@ -11,3 +11,6 @@ def fizzBuzz(r):
                 else:
                     print(str(i))
                     
+                    
+n=int(input("Enter a number: "))
+print(fizzBuzz(n))
