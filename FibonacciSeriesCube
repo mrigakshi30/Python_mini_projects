@@ -1,0 +1,11 @@
+n=int(input("Enter a number: "))
+a=0
+b=1
+li=[a,b]
+for i in range(n-2):
+  c=int(a+b)
+  li.append(c)
+  a=b
+  b=c
+  final_list = list(map(lambda x: x*x*x , li)) 
+print(final_list)
