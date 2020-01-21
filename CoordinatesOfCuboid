@@ -1,0 +1,16 @@
+x=int(input())
+y=int(input())
+z=int(input())
+n=int(input())
+li=[]
+for i in [0,x]:
+  for j in [0,y]:
+    for k in [0,z]:
+      if((i+j+k)!=n):
+        li.append((i,j,k)) 
+print(li)
+
+
+#The above code can be written in two lines also as follows
+x,y,z,n = map(int,input().split())
+print([(i,j,k) for i in [0,x] for j in [0,y] for k in [0,z] if ((i+j+k)!=n)])
